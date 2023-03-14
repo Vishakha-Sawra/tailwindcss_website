@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>John Doe</title>
+  </head>
+  <body class="font-serif text-white">
+    <div
+      class="w-full h-auto bg-darkblue"
+    >
+      <nav class="relative px-24 py-4 flex justify-between items-center">
+        <a class="text-3xl font-bold leading-none" href="#"> Logo </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center hover:text-blue p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="hidden font-bold absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-12"
+        >
+          <li><a class="text-lg hover:text-blue" href="#home">Home</a></li>
+          <li><a class="text-lg hover:text-blue" href="#about">About</a></li>
+          <li><a class="text-lg hover:text-blue" href="#blog">Blog</a></li>
+          <li>
+            <a class="text-lg hover:text-blue" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <a
+          class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue text-lg text-white font-bold rounded-xl transition duration-200"
+          href="#"
+          >Sign in</a
+        >
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-cyan-600 border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              Menu
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 cursor-pointer hover:text-blue"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold hover:bg-blue rounded"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold hover:bg-blue rounded"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold hover:bg-blue hover:text-blue-600 rounded"
+                  href="./blog.html"
+                  >Blogs</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold hover:bg-blue hover:text-blue-600 rounded"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a
+                class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700 rounded-xl hover:bg-blue"
+                href="#"
+                >Sign in</a
+              >
+            </div>
+            <p class="my-4 text-xs text-center">
+              <span>Copyright © 2023 FewV</span>
+            </p>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Landing page content -->
+      <div
+        class="px-24 text-center font-semibold flex items-center justify-center h-screen flex-col" id="home"
+      >
+        <h1 class="flex text-xl md:text-3xl">
+          Hey there,<span class="animate-waving-hand">👋</span>
+        </h1>
+        <h1 class="text-4xl md:text-5xl pt-4">
+          I'am
+          <span
+            class="bg-gradient-to-r from-cyan-500 via-indigo-600 to-fuchsia-500 animate-text bg-clip-text text-transparent"
+            >John Doe</span
+          >
+        </h1>
+        <h2 class="text-xl md:text-2xl pt-6">(Frontend enthusiast)</h2>
+        <p class="text-base md:text-lg pt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          quibusdam reiciendis, tenetur beatae laboriosam eaque fugiat optio
+          eum? Adipisci exercitationem ut distinctio odit ea provident!
+        </p>
+        <div class="flex space-x-8 pt-9 justify-center text-base">
+          <div class="w-28 h-auto">
+             <button type="button" class="w-32 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"> <a href="./blog.html" target="_blank" rel="noopener noreferrer">Blog</a> </button>
+          </div>
+          <div class="w-28 h-auto">
+            <button type="button" class="w-32 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"> <a href="./contact.html" target="_blank" rel="noopener noreferrer">Contact</a> </button>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- Landing page content end-->
+
+    <!-- Border -->
+    <div class="px-6 bg-darkblue">
+    <div
+      class="bg-gradient-to-r from-cyan-500 via-indigo-600 to-fuchsia-600 w-full h-0.5"
+    ></div></div>
+    <!-- Border end -->
+
+    <!-- Strengths -->
+    <div class="bg-darkblue w-full h-auto">
+      <div class="py-32">
+        <div class="text-3xl md:text-4xl font-semibold flex justify-center items-center text-cyan-500">MY STRENGTHS</div>
+        <div class="p-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="text-yellow-300 rounded-3xl w-auto h-auto m-7 p-6">
+            <h1 class="text-xl font-semibold">Ambition</h1>
+            <br />
+            <p class="text-xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              dolor accusamus obcaecati odio, possimus id corrupti asperiores
+              alias ex incidunt quos pariatur, voluptas eligendi doloribus?
+            </p>
+          </div>
+          <div class="text-teal-300 rounded-3xl w-auto h-auto m-7 p-6">
+            <h1 class="text-xl font-semibold">Persistent</h1>
+            <br />
+            <p class="text-xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              dolor accusamus obcaecati odio, possimus id corrupti asperiores
+              alias ex incidunt quos pariatur, voluptas eligendi doloribus?
+            </p>
+          </div>
+          <div class="text-fuchsia-400 rounded-3xl w-auto h-auto m-7 p-6">
+            <h1 class="text-xl font-semibold">Intuitive</h1>
+            <br />
+            <p class="text-xl">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              dolor accusamus obcaecati odio, possimus id corrupti asperiores
+              alias ex incidunt quos pariatur, voluptas eligendi doloribus?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Strengths end -->
+
+      <!-- About me -->
+
+    <div
+      class="flex flex-wrap bg-darkblue px-20 h-auto py-20" id="about"
+    >
+      <div class="h-full lg:w-8/12">
+        <div class="text-lg">A Bit About Me,</div>
+        <div class="text-6xl pt-8 text-teal-300">Who Am I?</div>
+        <div class="pt-8 text-xl">
+          <p>
+            I'm, <span class="text-yellow-400">John Doe</span>, Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Ullam, praesentium amet
+            iure, perspiciatis ipsum voluptas similique numquam illo ipsam cum
+            libero distinctio sequi ut, nemo quidem autem adipisci at? Alias
+            reiciendis, adipisci iure itaque iste recusandae mollitia assumenda
+            ducimus est eos vero minima corporis in reprehenderit inventore
+            facere nobis quae.
+          </p>
+        </div>
+      </div>
+      <div class="h-full lg:w-1/3 relative px-10 pt-10 xl:pt-0">
+          <img src="/img/boy.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="bg-darkblue w-full h-auto" id="blog">
+      <div class="py-28">
+        <div class="text-3xl md:text-4xl font-semibold flex justify-center items-center text-cyan-500">My Blogs</div>
+        <div class="p-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-gradient-to-r from-violet-400 to-purple rounded-3xl w-auto h-auto m-7 shadow-lg shadow-violet-400/50 ">
+            <img src="/img/pic-3.jpg" alt="" class="rounded-t-xl">
+            <div class="px-2">
+            <h1 class="text-xl font-semibold pt-3">Lorem, ipsum dolor.</h1>
+            <p class="text-xl pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione id ab incidunt soluta blanditiis.
+            </p>
+            <div class="py-5">
+              <button class="p-1 border-2 border-white hover:bg-blue rounded-xl"><a href="#">Read More</a></button>
+            </div>
+          </div>
+          </div>
+          <div class="bg-gradient-to-r from-teal-400 to-sky-800 rounded-3xl w-auto h-auto m-7 shadow-lg shadow-teal-400/50 dark:shadow-lg dark:shadow-sky-800/80">
+            <img src="/img/pic-1.jpg" alt="" class="rounded-t-xl">
+            <div class="px-2">
+            <h1 class="text-xl font-semibold pt-3">Lorem, ipsum dolor.</h1>
+            <p class="text-xl pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione id ab incidunt soluta blanditiis.
+            </p>
+            <div class="py-5">
+              <button class="p-1 border-2 border-white hover:bg-blue rounded-xl"><a href="#">Read More</a></button>
+            </div>
+          </div>
+          </div>
+          <div class="bg-gradient-to-r from-fuchsia-500 to-indigo-500 rounded-3xl w-auto h-auto m-7 shadow-lg shadow-fuchsia-500/80 dark:shadow-lg dark:shadow-indigo-500/60">
+            <img src="/img/pic-2.jpg" alt="" class="rounded-t-xl">
+            <div class="px-2">
+            <h1 class="text-xl font-semibold pt-3">Lorem, ipsum dolor.</h1>
+            <p class="text-xl pt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ratione id ab incidunt soluta blanditiis.
+            </p>
+            <div class="py-5">
+              <button class="p-1 border-2 border-white hover:bg-blue rounded-xl"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <div class="btn flex justify-center items-center pt-20">
+          <button type="button" class="w-32 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"> <a href="./blog.html" target="" rel="noopener noreferrer">View more</a> </button>
+        </div>
+      </div>
+      
+
+  <!-- Footer -->
+  
+<footer class="p-4 md:px-6 md:py-8 bg-darkblue">
+  <div class="sm:flex sm:items-center sm:justify-between text-cyan-200">
+      <a href="#" class="flex items-center mb-4 sm:mb-0">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap">Logo</span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm">
+          <li>
+              <a href="./about.html" class="mr-4 hover:underline md:mr-6 ">About</a>
+          </li>
+          <li>
+              <a href="./privacy.html" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="./blog.html" class="mr-4 hover:underline md:mr-6">Blogs</a>
+        </li>
+          <li>
+              <a href="./contact.html" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+  </div>
+  <!-- Border -->
+  <div
+  class="bg-gradient-to-r from-cyan-500 via-indigo-600 to-fuchsia-600 w-full h-0.5"
+></div>
+<!-- Border end -->
+  <span class="pt-6 block text-sm sm:text-center text-cyan-200">© <a href="#" class="hover:underline">Logo</a>. All Rights Reserved.
+  </span>
+</footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
